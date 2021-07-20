@@ -1,0 +1,18 @@
+{
+    "name": "Cereal",
+    "version": "1.0",
+    "manifest_version": 3, 
+    "background":{
+        "service_worker":"./background.js"
+    },
+    "host_permissions": ["http://*/*","https://*/*", "https://airbnb.com/*", "<all_urls>"],
+    "permissions": [ 
+        "activeTab", 
+        "tabs", 
+        "scripting"
+    ],
+    "action":{
+        "default_popup": "popup1.html",
+        "default_title": "Cereal"
+    }
+} 
