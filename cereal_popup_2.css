@@ -1,0 +1,365 @@
+/* Popup Window 2 CSS */ 
+
+/* Global Variables */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,300,700");
+
+
+:root { 
+  --golden-tainoi: #fdca5ecc;
+  --golden-tainoi-2: #fdca5e;
+  --white: #ffffff;
+ 
+  --font-size-m: 23px;
+  --font-size-s: 16px;
+  --font-size-xs: 15px;
+ 
+  --font-family-noto_sans: "Noto Sans", Helvetica;
+}
+
+.notosans-bold-white-23px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Extension container wrap window 2*/
+.extension {
+    background-color: var(--white);
+    height: 600px; /* 720px  ============== changed*/
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 432px;
+}
+
+/* Top Bar CSS */
+.extension .top-bar-elabnx {
+    background-color: transparent;
+    height: 44px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 432px;
+}
+
+.extension .bar-CQba4b {
+    background-color: transparent;
+    height: 44px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 432px;
+}
+
+.extension .divider-CQba4b {
+    background-color: transparent;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: 44px;
+    width: 432px;
+}
+
+.extension .logo-CQba4b {
+    background-color: transparent;
+    height: 25px;
+    left: 181px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 10px;
+    width: 69px;
+}
+  
+.extension .exit-CQba4b {
+    background-color: transparent;
+    height: 15px;
+    left: 397px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+}
+
+.extension .icround-refresh-CQba4b {
+    background-color: transparent;
+    height: 22px;
+    left: 366px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 11px;
+    width: 22px;
+}
+
+.extension .evaarrow-back-fill-CQba4b {
+    background-color: transparent;
+    height: 24px;
+    left: 11px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+}
+
+.extension .instruction-1-je3bZ5 {
+  background-color: transparent;
+  color: #8b8b8b;
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  height: 22px;
+  left: 159px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: auto;
+}
+
+/* Projects View */
+
+.extension .load-projects-elabnx {
+  background-color: transparent;
+  height: 628px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 44px;
+  width: 432px;
+}
+
+/* New Projects Card */
+
+.extension .new-project-je3bZ5 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100px;
+  left: 13px;
+  position: absolute;
+  top: 44px;
+  width: 405px;
+}
+
+.extension .project-card-fy00Xp {
+  background-color: transparent;
+  height: 1px;
+  left: 202px;
+  position: absolute;
+  top: 50px;
+  width: 1px;
+}
+
+.extension .overlay-fy00Xp {
+  background-color: var(--white);
+  border: 2px solid var(--golden-tainoi-2);
+  border-radius: 10px;
+  height: 100px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 405px;
+}
+
+.extension .new-project-fy00Xp {
+  background-color: transparent;
+  color: var(--golden-tainoi-2);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: 36px;
+  left: 50px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 4px #0000001a;
+  top: 32px;
+  width: 335px;
+}
+
+.extension .vector-fy00Xp {
+  background-color: transparent;
+  height: 26px;
+  left: 18px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 38px;
+  width: 26px;
+}
+
+/* Example of Project */
+
+.extension .project-IwxZfH {
+    background-color: transparent;
+    height: 100px;
+    left: 13px;
+    position: absolute;
+    top: 154px;
+    width: 405px;
+}
+
+.extension .project-card-ddsOC4 {
+  background-color: transparent;
+  height: 104px;
+  left: -2px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: -2px;
+  width: 409px;
+}
+
+.extension .overlay-ddsOC4 {
+  background-color: var(--golden-tainoi);
+  border-radius: 10px;
+  height: 100px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 405px;
+}
+
+.extension .hawaii-trip-2021-ddsOC4 {
+  background-color: transparent;
+  height: 36px;
+  left: 23px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 4px #00000080;
+  top: 32px;
+  width: 362px;
+}
+
+/* Bottom Section */
+.extension .bottom-section-elabnx {
+  background-color: transparent;
+  height: 56px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 540px; /* 672px  ============== changed*/
+  width: 432px;
+}
+
+.extension .done-uNkdua {
+  background-color: transparent;
+  height: 31px;
+  left: 322px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 14px;
+  width: 100px;
+}
+
+.extension .button-5ZkHU8 {
+  background-color: var(--golden-tainoi-2);
+  border-radius: 15.5px;
+  box-shadow: 0px 0px 2px #00000040;
+  height: 31px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100px;
+}
+
+.extension .done-5ZkHU8 {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+  height: 31px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 102px;
+}
+
+.extension .mdi-lightmagnify-uNkdua {
+  background-color: transparent;
+  height: 20px;
+  left: 16px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 18px;
+  width: 20px;
+}
+
+.extension .instruction-1-uNkdua {
+  background-color: transparent;
+  border-style: none;
+  color: #8b8b8b;
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 300;
+  height: 20px;
+  left: 46px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  outline: none;
+  position: absolute;
+  text-align: left;
+  top: 18px;
+  width: auto;
+}
+
+/* Extension Actions! */
+.extension #close-button:hover{
+  cursor: pointer;
+}
+
+.extension #refresh-button:hover{
+  cursor: pointer;
+}
+
+.extension #back-arrow:hover{
+  cursor: pointer;
+}
+
+.extension #done-button:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
