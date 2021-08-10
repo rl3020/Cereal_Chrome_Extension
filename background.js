@@ -63,6 +63,24 @@ var request_data = async function(tab){
 
         }
 
+        //for Booking scraping
+        if(websiteName.includes("booking")){
+            start = url.indexOf(".com") + 5;
+            
+            var remainingListingURL = "";
+            for(let i = 0; i < 6; i ++){
+                remainingListingURL += url[start + i];
+            }
+
+            if(remainingListingURL.includes("hotel")){
+                typeOfListing = "single";
+            }
+            else{
+                typeOfListing = "multiple";
+            }
+
+        }
+
         var result = {
             website: websiteName, 
             type: typeOfListing
@@ -284,6 +302,24 @@ chrome.tabs.onUpdated.addListener(function(tabId , changeInfo, tab){
                 }
     
                 if(remainingListingURL.includes("room")){
+                    typeOfListing = "single";
+                }
+                else{
+                    typeOfListing = "multiple";
+                }
+    
+            }
+
+             //for Booking scraping
+             if(websiteName.includes("booking")){
+                start = url.indexOf(".com") + 5;
+                
+                var remainingListingURL = "";
+                for(let i = 0; i < 6; i ++){
+                    remainingListingURL += url[start + i];
+                }
+    
+                if(remainingListingURL.includes("hotel")){
                     typeOfListing = "single";
                 }
                 else{
