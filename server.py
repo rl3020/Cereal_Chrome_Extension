@@ -159,19 +159,42 @@ class Booking:
         images = []
         listing_links = []
 
+        # Get image URLs
+        img = self.soup.findAll("a","data-thumb-url")
+        if len(img) > 0: 
+            img = img[0]
+            img = img["href"]
+        else: 
+            img = None
+        images.append(img)
+
         # Get title
         title = self.soup.findAll("h2", "hp__hotel-name") 
         title = title[0].text if len(title) > 0 else None
         titles.append(title)
 
         # Get price
-        price = self.soup.findAll("div", "bui_price")
+        price = self.soup.findAll("div", "bui-price-display__value prco-inline-block-maker-helper prco-f-font-heading ")
         price = price[0].text if len(price) > 0 else None
         prices.append(price)
 
+        # Get ratings
+        rating = self.soup.findAll("div", "e5a32fd86b")
+        rating = rating[0].text if len(rating) > 0 else None
+        ratings.append(rating)
+
+        # Get the amenities
+        amenities = [amen.text for amen in self.soup.findAll("div", "important_facilities") if ("·" not in amen.text)]
+        amenities = [amen for amen in amenities if amen != ""]
+        amenities_list.append(amenities)
+
+
         data = {
+            "images": images,
             "titles": titles, 
-            "prices": prices
+            "prices": prices, 
+            "amenities": amenities_list, 
+            "ratings": ratings
         }
 
         pretty(data)
