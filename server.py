@@ -227,7 +227,7 @@ class Booking:
             else: listing_title = None
 
             # Get the price
-            price = listing.findAll("div", "bui-price-display__value prco-inline-block-maker-helper ")
+            price = listing.findAll("div", "bui-price-display__value")
             if len(price) > 0: price = price[0].text
             else: price = None
 
@@ -237,7 +237,7 @@ class Booking:
             else: rating = None
 
             # Get the amenities
-            amenities = [amen.text for amen in listing.findAll("div", "sr_room_reinforcement") if ("·" not in amen.text)]
+            amenities = [amen.text for amen in listing.findAll("div", "sr_room_reinforcement")]
             amenities = [amen for amen in amenities if amen != ""]
 
             # Get image URLs
