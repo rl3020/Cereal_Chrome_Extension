@@ -212,7 +212,7 @@ class Booking:
                     print("\n")
 
 
-        listings = self.soup.findAll("div", "sr_item  sr_item_new sr_item_default sr_property_block sr_flex_layout         ")
+        listings = self.soup.findAll("div", "sr_item")
         titles = []
         prices = []
         ratings = []
